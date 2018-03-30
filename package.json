@@ -1,24 +1,80 @@
 {
-  "name": "ng2-canvas-whiteboard",
-  "version": "1.4.2",
+  "_args": [
+    [
+      {
+        "raw": "ng2-canvas-whiteboard@^1.4.2",
+        "scope": null,
+        "escapedName": "ng2-canvas-whiteboard",
+        "name": "ng2-canvas-whiteboard",
+        "rawSpec": "^1.4.2",
+        "spec": ">=1.4.2 <2.0.0",
+        "type": "range"
+      },
+      "C:\\Users\\anabi\\Desktop\\archive"
+    ]
+  ],
+  "_from": "ng2-canvas-whiteboard@>=1.4.2 <2.0.0",
+  "_id": "ng2-canvas-whiteboard@1.4.2",
+  "_inCache": true,
+  "_location": "/ng2-canvas-whiteboard",
+  "_nodeVersion": "8.9.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/ng2-canvas-whiteboard-1.4.2.tgz_1511968496299_0.9291749515105039"
+  },
+  "_npmUser": {
+    "name": "webfactory",
+    "email": "info@webfactory.mk"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ng2-canvas-whiteboard@^1.4.2",
+    "scope": null,
+    "escapedName": "ng2-canvas-whiteboard",
+    "name": "ng2-canvas-whiteboard",
+    "rawSpec": "^1.4.2",
+    "spec": ">=1.4.2 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng2-canvas-whiteboard/-/ng2-canvas-whiteboard-1.4.2.tgz",
+  "_shasum": "dad9d002643778e971399732cbf2b0720712f427",
+  "_shrinkwrap": null,
+  "_spec": "ng2-canvas-whiteboard@^1.4.2",
+  "_where": "C:\\Users\\anabi\\Desktop\\archive",
+  "author": {
+    "name": "webfactory"
+  },
+  "bugs": {
+    "url": "https://github.com/WebFactoryMk/ng2-canvas-whiteboard/issues"
+  },
+  "dependencies": {},
   "description": "A Canvas component for Angular2 which supports free drawing.",
-  "main": "index.js",
-  "scripts": {
-    "watch": "tsc -w",
-    "build": "rm -rf dist && ngc"
+  "devDependencies": {
+    "@angular/common": "4.3.2",
+    "@angular/compiler": "4.3.2",
+    "@angular/compiler-cli": "4.3.2",
+    "@angular/core": "4.3.2",
+    "rxjs": "5.2.0",
+    "typescript": "2.2.1",
+    "zone.js": "0.8.4"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-R98QWFfUFuoy1zOAzjqe44gkmLXpqRkpHCuNmM2IaEpeGp+h84woyn9kAdT9N+fqMfSSqa0kEo96RkwiYjTEPg==",
+    "shasum": "dad9d002643778e971399732cbf2b0720712f427",
+    "tarball": "https://registry.npmjs.org/ng2-canvas-whiteboard/-/ng2-canvas-whiteboard-1.4.2.tgz"
   },
   "files": [
     "dist",
     "index.js",
     "index.d.ts"
   ],
-  "typings": "index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/WebFactoryMk/ng2-canvas-whiteboard.git"
-  },
-  "author": "webfactory",
-  "license": "MIT",
+  "gitHead": "20e0e110925710c61493b6194a8f95bc024a748e",
+  "homepage": "https://github.com/WebFactoryMk/ng2-canvas-whiteboard#readme",
   "keywords": [
     "angular2",
     "angular",
@@ -30,14 +86,25 @@
     "colorpicker",
     "canvas colorpicker"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "@angular/common": "4.3.2",
-    "@angular/compiler-cli": "4.3.2",
-    "@angular/compiler": "4.3.2",
-    "@angular/core": "4.3.2",
-    "typescript": "2.2.1",
-    "rxjs": "5.2.0",
-    "zone.js": "0.8.4"
-  }
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "webfactory",
+      "email": "info@webfactory.mk"
+    }
+  ],
+  "name": "ng2-canvas-whiteboard",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebFactoryMk/ng2-canvas-whiteboard.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && ngc",
+    "watch": "tsc -w"
+  },
+  "typings": "index.d.ts",
+  "version": "1.4.2"
 }
