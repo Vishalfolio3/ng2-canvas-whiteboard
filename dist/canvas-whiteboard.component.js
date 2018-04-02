@@ -30,7 +30,7 @@ var CanvasWhiteboardComponent = (function () {
         this.onBatchUpdate = new core_1.EventEmitter();
         this.onImageLoaded = new core_1.EventEmitter();
         this.onSave = new core_1.EventEmitter();
-        this._shouldDraw = false;
+        this._shouldDraw = true;
         this._canDraw = true;
         this._clientDragging = false;
         this._lastPositionForUUID = {};
@@ -51,6 +51,7 @@ var CanvasWhiteboardComponent = (function () {
         this._initCanvasServiceObservables();
         this.context = this.canvas.nativeElement.getContext("2d");
         this._calculateCanvasWidthAndHeight();
+        this.clearCanvasLocal();
     };
     /**
      * Recalculate the width and height of the canvas after the view has been fully initialized
@@ -184,7 +185,7 @@ var CanvasWhiteboardComponent = (function () {
      */
     CanvasWhiteboardComponent.prototype._loadImage = function (callbackFn) {
         var _this = this;
-        this._canDraw = false;
+        this._canDraw = true;
         this._imageElement = new Image();
         this._imageElement.addEventListener("load", function () {
             _this.context.save();
@@ -192,8 +193,8 @@ var CanvasWhiteboardComponent = (function () {
             _this.context.restore();
             _this._drawMissingUpdates();
             _this._canDraw = true;
-            callbackFn && callbackFn();
             _this.onImageLoaded.emit(true);
+            callbackFn && callbackFn();
         });
         this._imageElement.src = this.imageUrl;
     };
@@ -740,9 +741,9 @@ var CanvasWhiteboardComponent = (function () {
         if (returnedDataType === void 0) { returnedDataType = "image/png"; }
         this.generateCanvasData(function (generatedData) {
             _this.onSave.emit(generatedData);
-            if (_this.shouldDownloadDrawing) {
-                _this.downloadCanvasImage(returnedDataType, generatedData);
-            }
+            // if (_this.shouldDownloadDrawing) {
+            //     _this.downloadCanvasImage(returnedDataType, generatedData);
+            // }
         });
     };
     CanvasWhiteboardComponent.prototype._generateDataTypeString = function (returnedDataType) {
